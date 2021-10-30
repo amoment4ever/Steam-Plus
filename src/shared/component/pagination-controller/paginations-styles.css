@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5D6488;
+  color: #C5C8D5;
+  padding: 2px 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.element:hover{
+  background: rgba(116, 121, 149, 0.3);
+}
+
+.element:first-child, .element:last-child {
+  margin: 0;
+}
+
+.selected, .selected:hover {
+  background: #5D6488;
+  border: 1px solid #5D6488;
+  color: #FFFFFF;
+}

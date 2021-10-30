@@ -1,0 +1,16 @@
+
+.per_page_items{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin: 8px 0 10px;
+  padding: 9px 10px;
+}
+
+.per_page_label{
+  margin-right: 5px;
+}

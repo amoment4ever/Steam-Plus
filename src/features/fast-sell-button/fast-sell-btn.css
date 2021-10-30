@@ -1,0 +1,22 @@
+.btn {
+	position: absolute;
+	left: 90px;
+	bottom: 15px;
+	min-width: 150px;
+	display: flex;
+	align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+.loader{
+	margin-left: 16px;
+}

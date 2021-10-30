@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background: inherit;
+  z-index: 11;
+  margin-left: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  height: fit-content;
+}

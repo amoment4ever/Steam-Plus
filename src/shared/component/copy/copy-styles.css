@@ -1,0 +1,10 @@
+.copy_icon {
+  cursor: pointer;
+  stroke: var(--color-white)
+}
+
+.copy_icon_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+.container {
+  position: absolute;
+  right: -8px;
+  display: grid;
+  row-gap: 5px;
+  transform: translateX(100%);
+  top: 110px;
+}
+
+.info_container {
+  display: flex;
+  width: 100%;
+  color: var(--color-white);
+  font-size: var(--font-size-3);
+  font-family: var(--font-family);
+  height: 75px;
+  row-gap: 20px;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--color-black-m);
+  position: relative;
+  top: -5px;
+}
+
+.inventory_container {
+  display: flex;
+  gap: 17px;
+  padding-bottom: 15px;
+}
+
+.container_trade {
+  margin-top: 10px;
+}
+
+.info_rows{
+  display: grid;
+  row-gap: 11px;
+}
+
+.info_row{
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 80px 100px 100px;
+}

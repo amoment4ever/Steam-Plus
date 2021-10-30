@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  padding-bottom: 22px;
+}
+
+.item_wrapper {
+  flex: 1;
+}
+.item {
+  flex: 1;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  flex: 1;
+}
+
+.community_ban{
+  fill: #B82A2A;
+}
+
+.default{
+  fill: #515B5F;
+}
+
+.tradeban{
+  stroke: #B82A2A;
+}
+
+.tradeban > path:first-child {
+  fill: #B82A2A;
+}
+
+
+.default_tradeban{
+  stroke: #515B5F;
+}
+
+.default_tradeban g path:first-child {
+  fill: #515B5F;
+}
+
+.vanbanned{
+  fill: #B82A2A;
+}
+
+.current_steam_id{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-2);
+  line-height: var(--font-size-3);
+  margin-bottom: 20px;
+}
+.current_steam_id_field {
+  padding: 9px 11px;
+  border-radius: var(--border-radius);
+  border: 0.5px solid var(--color-gray-d);
+  color: var(--color-white);
+  line-height: inherit;
+  flex: 1;
+  max-width: 200px;
+  cursor: text;
+}
+
+.copy_icon{
+  cursor: pointer;
+}

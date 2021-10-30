@@ -1,0 +1,42 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-red: #B82A2A;
+  --color-green: #678E34;
+  --color-souvenir: #FFD700;
+  --color-stattrak: #CF6A32;
+  --color-gray-l: #D2D2D2;
+  --color-gray-m: #A3ADB0;
+  --color-gray-d: #515B5F;
+  --color-black-l: #2F464D;
+  --color-black-m: #19262B;
+  --color-black-d: #121B1E;
+  --color-black-m-t: rgba(47, 70, 77, 0.3);;
+  --color-black-d-t: rgba(47, 70, 77, 0.5);
+  --color-blue-l: #747995;
+  --color-blue-m: #5D6488;
+  --color-blue-d: #3F466D;
+  --color-blue-m-t: rgba(93, 100, 136, 0.2);
+  --color-blue-d-t: rgba(63, 70, 109, 0.3);
+  --color-blue-text: #C5C8D5;
+
+  --font-family-steam: "Motiva Sans", Sans-serif;
+  --font-family: "Arial-custom", Sans-serif;
+  --font-normal: 400;
+  --font-bold: 500;
+  --font-size-1: 10px;
+  --font-size-2: 12px;
+  --font-size-3: 14px;
+  --font-size-4: 17px;
+  --font-size-5: 20px;
+  --font-size-6: 25px;
+
+  --border-radius: 4px;
+  --border-size: 1.5px;
+}
+
+@font-face {
+  font-family: Arial-custom;
+  font-style: normal;
+  src: url('chrome-extension://__MSG_@@extension_id__/assets/fonts/Arial/arialmt.ttf') format("opentype");
+}
+

@@ -1,0 +1,56 @@
+.float,
+.pattern {
+  position: absolute;
+  font-size: var(--font-size-1);
+  font-family: var(--font-family);
+  color: var(--color-bl-m);
+}
+
+.float {
+  top: 4px;
+  right: 4px;
+}
+
+.pattern {
+  top: 15px;
+  right: 4px;
+}
+
+.price {
+  position: absolute;
+  font-size: var(--font-size-2);
+  color: var(--color-bl-m);
+  bottom: 2px;
+  left: 2px;
+}
+
+.trade_lock,
+.trade_lock_top {
+  position: absolute;
+  font-size: var(--font-size-1);
+  color: var(--color-bl-m);
+  left: 2px;
+  font-weight: bold;
+}
+.trade_lock {
+  top: 20px;
+}
+.trade_lock_top {
+  top: 4px;
+}
+
+.csm_price {
+  position: relative;
+  z-index: 2;
+  right: unset;
+  bottom: unset;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.csm_price svg {
+  margin: 0 !important;
+  margin-left: 4px !important;
+  position: relative;
+  top: 1px;
+}

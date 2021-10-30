@@ -1,0 +1,13 @@
+.panel {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 10px;
+}
+
+.panel button {
+  flex-shrink: 0;
+}

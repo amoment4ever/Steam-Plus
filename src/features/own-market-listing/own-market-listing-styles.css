@@ -1,0 +1,24 @@
+.container {
+  right: 4px;
+  top: 32%;
+  transform: translate(-50%);
+  position: absolute;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  right: 9px;
+  bottom: 0px;
+}
+
+.delete_from_sell{
+  margin-right: 10px;
+  min-width: 120px;
+}
+
+.total_container{
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,15 @@
+.sorting {
+  width: fit-content;
+  position: relative;
+  top: -10px;
+  display: flex;
+  align-items: center;
+}
+
+.loader {
+  margin-left: 15px;
+}
+
+.sort_icon {
+  margin-right: 10px;
+}

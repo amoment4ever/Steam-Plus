@@ -1,0 +1,13 @@
+.total {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+}
+
+.fast_sell_btn{
+  bottom: 0;
+  position: absolute;
+  left: 52%;
+  transform: translate(-50%);
+}

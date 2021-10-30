@@ -1,0 +1,77 @@
+.input-wrapper {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  background: var(--color-black-m);
+  height: 44px;
+  width: 97px;
+  border: var(--border-size) solid var(--color-black-l);
+}
+.input-wrapper:hover {
+  background: var(--color-black-m-t);
+}
+.input-wrapper:focus-within {
+  background: var(--color-black-d-t);
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.input-wrapper .input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--color-white);
+  flex: 1;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-4);
+  padding: 0 5px;
+  text-align: center;
+}
+
+.error.input-wrapper {
+  border: var(--border-size) solid var(--color-red);
+  background: var(--color-black-d-t);
+}
+
+.disabled.input-wrapper {
+  background: var(--color-black-m-t);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number .input {
+  padding-right: 15px !important;
+}
+
+.arrows {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  opacity: 0;
+  transition: 0.2s;
+}
+.arrow {
+  padding: 2px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: inherit;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.arrow_top {
+  transform: rotate(180deg);
+}
+.input-wrapper:hover .arrows {
+  opacity: 1;
+}

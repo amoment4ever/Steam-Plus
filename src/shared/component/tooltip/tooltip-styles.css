@@ -1,0 +1,44 @@
+.wrapper {
+	width: fit-content;
+	height: fit-content;
+}
+
+.tooltip {
+	pointer-events: none;
+	position: absolute;
+	z-index: 99999;
+}
+
+.tooltip__content {
+	background: var(--color-blue-m);
+	color: var(--color-white);
+	word-break: break-word;
+	width: max-content;
+	border-radius: 16px;
+	padding: 6px 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 250px;
+	box-sizing: border-box;
+	font-family: var(--font-family);
+	font-size: var(--font-size-2);
+}
+
+.tooltip_enter {
+	opacity: 0;
+}
+
+.tooltip_enter_active {
+	opacity: 1;
+	transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 0);
+}
+
+.tooltip_exit {
+	opacity: 1;
+}
+
+.tooltip_exit_active {
+	opacity: 0;
+	transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 0);
+}

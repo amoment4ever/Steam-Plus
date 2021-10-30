@@ -1,0 +1,69 @@
+
+.app {
+  background: var(--color-black-m);
+  width: 350px;
+  height: 110px;
+  box-sizing: border-box;
+  font-family: Arial-custom;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-3);
+  line-height: 120%;
+  color: var(--color-white);
+  min-width: 335px;
+  min-height: 350px;
+}
+
+.tab_head {
+  background: var(--color-black-l);
+}
+.tab_btn_active {
+  background: var(--color-black-m);
+  border-radius: 8px 8px 0px 0px;
+}
+.tab_btn_active:first-of-type {
+  border-radius: 0px 8px 0px 0px;
+}
+
+.mail {
+  color: var(--color-blue-text);
+}
+
+.rows {
+  display: grid;
+  row-gap: 15px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  width: 100%;
+}
+
+.row_value{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rate {
+  padding: 15px 0;
+  border-color: var(--color-black-l);
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rate_field {
+  height: 26px;
+  width: 60px;
+}
+.rate_field input {
+  font-size: var(--font-size-3) !important;
+}
+
+@font-face {
+  font-family: Arial-custom;
+  font-style: normal;
+  src: url('../../assets/fonts/Arial/arialmt.ttf') format("opentype");
+}

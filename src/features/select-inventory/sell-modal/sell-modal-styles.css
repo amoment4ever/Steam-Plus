@@ -1,0 +1,154 @@
+.title {
+  font-family: var(--font-family-steam);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-6);
+  color: var(--color-white);
+}
+
+.title span {
+  color: var(--color-blue-text)
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 30px;
+}
+.footer__price-bullet {
+  font-size: var(--font-size-4);
+  color: var(--color-white);
+  text-align: start;
+  flex: 1;
+}
+.footer__price-title {
+  font-size: var(--font-size-3);
+  color: var(--color-gray-m);
+  margin-bottom: 10px;
+}
+
+.footer__chekbox {
+  margin-right: 30px;
+}
+
+.listing__status {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: var(--font-size-4);
+}
+
+.modal{
+  width: 797px;
+  height: 612px;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.table {
+  width: 100%;
+  display: grid;
+  row-gap: 9px;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: 381px 138px 118px 1fr;
+  width: 100%;
+  box-sizing: border-box;
+}
+.table-head p {
+  text-align: end;
+}
+
+.item {
+  background: var(--color-black-m);
+  border-radius: var(--border-radius);
+  width: 100%;
+  display: grid;
+  align-items: center;
+  height: 97px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  grid-template-columns: 110px 200px 137px 134px 125px 1fr;
+}
+.stattrak {
+  color: var(--color-stattrak);
+}
+.souvenir {
+  color: var(--color-souvenir);
+}
+
+.item_img {
+  width: 101px;
+  height: 73px;
+  object-fit: contain;
+}
+
+.item_name{
+  font-size: var(--font-size-3);
+  flex: 2;
+}
+
+.item_stickers{
+  margin-top: 6px;
+  display: flex;
+  gap: 3px;
+}
+.item_sticker{
+  height: 21px;
+}
+
+.price{
+  font-family: var(--font-family-steam);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-4);
+  color: var(--color-white);
+  flex: 1;
+}
+
+.delete{
+  cursor: pointer;
+}
+
+.price_difference{
+  display: flex;
+  flex-direction: column;
+}
+
+.price_difference_tooltip{
+  flex: 1;
+}
+
+.input_difference{
+  height: 26px;
+  width: 106px;
+  border: 1px solid var(--color-blue-l);
+  box-sizing: border-box;
+  background: var(--color-black-l);
+  position: relative;
+  top: -3px;
+}
+
+.input_difference > input {
+  font-family: Motiva Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.disabled_price_difference{
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.select_label {
+  margin-bottom: 4px;
+}

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "checkJs": false,
+    "experimentalDecorators": true,
+    "target": "es2020",
+    "jsx": "react",
+    "lib": [
+      "es2015",
+      "es2016",
+      "dom"
+    ],
+    "paths": {
+      "@features/*": [
+        "./features/*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ],
+      "@core/*": [
+        "./core/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@pages/*": [
+        "./pages/*"
+      ],
+      "@store/*": [
+        "./store/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".build"
+  ]
+}

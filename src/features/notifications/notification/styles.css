@@ -1,0 +1,64 @@
+.notification {
+  background: var(--color-blue-m);
+  border-radius: var(--border-radius);
+  /* width: 156px; */
+  padding: 5px 15px;
+  width: fit-content;
+  min-height: 38px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  line-height: 120%;
+  font-size: var(--font-size-3);
+  font-family: var(--font-family);
+  transition: all 0.25s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.notification_with_icon {
+  padding-left: 10px;
+}
+
+.notification_error {
+  background: var(--color-red);
+}
+
+
+.animated {
+  animation: appear 0.25s ease-in-out;
+}
+
+.close {
+  animation: close 0.25s ease-in-out forwards;
+}
+
+.error {
+  background: #B82A2A;
+}
+
+.icon_notification{
+  margin-right: 5px;
+}
+
+@keyframes close {
+  0% {
+    transform: translate(0)
+  }
+
+  100% {
+    transform: translate(200%)
+  }
+}
+
+
+@keyframes appear {
+  0% {
+    transform: translate(200%)
+  }
+
+  100% {
+    transform: translate(0)
+  }
+}

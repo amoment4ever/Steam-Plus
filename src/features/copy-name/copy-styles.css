@@ -1,0 +1,10 @@
+.copy_icon {
+  margin-left: 14px;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}

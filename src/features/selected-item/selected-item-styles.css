@@ -1,0 +1,123 @@
+.chars {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.char{
+  display: flex;
+  flex-direction: column;
+}
+
+.char_value {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-white);
+  margin-bottom: 3px;
+}
+
+.char_desc {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  color: #767676;
+}
+
+.price_char{
+  align-items: flex-end;
+}
+
+.extra_block{
+  display: grid;
+  row-gap: 8px;
+}
+
+.market_content_sticky{
+  position: sticky;
+  bottom: 0;
+}
+
+.background_alpha > div {
+  background-color: rgba(24,24,24, 0.9);
+}
+
+.sticker_container{
+  display: grid;
+  row-gap: 15px;
+}
+
+.sticker{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticker a{
+  height: 42px;
+  width: 56px;
+  transition: all 0.25s ease;
+}
+
+.sticker a:hover{
+  transform: scale(1.2);
+}
+
+.sticker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sticker_info{
+  flex: 1;
+  display: grid;
+}
+
+.sticker_name{
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-white);
+}
+
+.sticker_wear {
+  font-size: 12px;
+  line-height: 14px;
+  color: #D2D2D2;
+}
+
+
+.green_s{
+  color: #779A4A;
+}
+
+.red_s {
+  color: #B82A2A;
+}
+
+.sticker_price{
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-white);
+}
+
+.price_container {
+  display: flex;
+}
+.price_info {
+  flex: 1;
+  margin-bottom: 13px;
+}
+.price_market_link {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.trade_lock {
+  color: rgb(255, 64, 64);
+  margin: 16px 0;
+}

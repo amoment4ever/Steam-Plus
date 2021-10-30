@@ -1,0 +1,68 @@
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 5px;
+	box-sizing: content-box;
+	display: flex;
+	margin-top: 23px;
+  margin-bottom: 24px;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(45,156,219,1) 0%,
+    rgba(45,156,219,1) 7%,
+    rgba(103,142,52,1) 7%,
+    rgba(103,142,52,1) 15%,
+    rgba(242,201,76,1) 15%,
+    rgba(242,201,76,1) 38%,
+    rgba(242,153,74,1) 38%,
+    rgba(242,153,74,1) 45%,
+    rgba(235,87,87,1) 45%
+  );
+}
+
+.bar_bound {
+  position: absolute;
+  height: 100%;
+  background: var(--color-gray-d);
+}
+.bar_bound_full {
+  left: 0;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.pointer {
+  position: absolute;
+  transform: translate(-50%, 100%);
+  top: -18px;
+}
+
+.bound_label {
+  position: absolute;
+  bottom: -3px;
+  transform: translate(-50%, 100%);
+  color: var(--color-gray-m);
+  font-size: 11px;
+}
+/* .float_with_label {
+	
+} */
+
+.float_label {
+  margin-bottom: 7px;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ababab;
+}
+
+.float_value {
+  color: white;
+}

@@ -1,0 +1,125 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Plus",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "128.png"
+  },
+  "icons": {
+    "128": "128.png"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "permissions": [
+    "cookies",
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://steamcommunity.com/*/inventory",
+        "*://steamcommunity.com/*/inventory/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "inventoryScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://steamcommunity.com/market",
+        "*://steamcommunity.com/market/"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "marketScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://steamcommunity.com/market/listings/730*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "marketListingScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://steamcommunity.com/tradeoffer/*/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "tradeofferScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://steamcommunity.com/*/tradeoffers*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "tradeOffersScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://steamcommunity.com/id/*",
+        "*://steamcommunity.com/profiles/*"],
+      "run_at" : "document_idle",
+      "js": ["profileScript.bundle.js"],
+      "css": ["content.styles.css"]
+    },
+    {
+      "matches": [
+        "*://steamcommunity.com/id/*/friends*",
+        "*://steamcommunity.com/profiles/*/friends*"
+      ],
+      "run_at" : "document_idle",
+      "js": ["friendRequestsScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "128.png"
+      ],
+      "matches": []
+    },
+    {
+      "resources": [
+        "bridge.bundle.js",
+        "/assets/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
