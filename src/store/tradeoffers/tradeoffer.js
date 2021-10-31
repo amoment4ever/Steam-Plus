@@ -34,6 +34,10 @@ export class TradeOffer {
     this.itemsToReceive = []
   }
 
+  get $dom() {
+    return document.getElementById(`tradeofferid_${this.tradeofferId}`)
+  }
+
   get partnerSteam64Id() {
     return SteamID.fromIndividualAccountID(
       this.tradeOfferOrigin.accountid_other
@@ -83,14 +87,14 @@ export class TradeOffer {
       this.tradeOfferOrigin.items_to_receive,
       this.tradeOfferStore.descriptions,
       this.globalStore,
-      { owner: this.partnerSteam64Id }
+      { owner: this.partnerSteam64Id, container: this.$dom }
     )
 
     this.itemsToGive = formatItems(
       this.tradeOfferOrigin.items_to_give,
       this.tradeOfferStore.descriptions,
       this.globalStore,
-      { owner: this.globalStore.userStore.steamId }
+      { owner: this.globalStore.userStore.steamId, container: this.$dom }
     )
   }
 }

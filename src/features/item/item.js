@@ -23,10 +23,12 @@ export class ItemRender {
     const { appId, contextId, assetId } = this.itemStore
     const { classid, instanceid } = this.itemStore.itemOrigin
 
+    const $container = this.itemStore.inventoryStore.container
+
     return (
       document.getElementById(`${appId}_${contextId}_${assetId}`) ||
       document.getElementById(`item${appId}_${contextId}_${assetId}`) ||
-      document.querySelector(
+      ($container || document).querySelector(
         `[data-economy-item="classinfo/${appId}/${classid}/${instanceid}"]`
       )
     )
