@@ -109,7 +109,7 @@ export class SellItemsStore {
 
   get allItemsResultPrice() {
     return this.selectedItemsFull.reduce((sum, curr) => {
-      const price = this.autoSell ? curr.lowesPrice : curr.sellPrice
+      const price = this.autoSell ? curr.lowesPrice : curr.sellPrice * 100
       const { listPrice, getPrice } = this.calcSellPrice(price)
 
       return listPrice ? getPrice + sum : sum
@@ -124,7 +124,7 @@ export class SellItemsStore {
 
   get allItemsResultFees() {
     return this.selectedItemsFull.reduce((sum, curr) => {
-      const price = this.autoSell ? curr.lowesPrice : curr.sellPrice
+      const price = this.autoSell ? curr.lowesPrice : curr.sellPrice * 100
       const { listPrice, fees } = this.calcSellPrice(price)
 
       return listPrice ? fees + sum : sum
