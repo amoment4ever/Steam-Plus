@@ -68,16 +68,17 @@ window.addEventListener('load', () => {
     .querySelector('.inventory_page_right')
     .addEventListener('DOMNodeInserted', selectedItemHandler)
 
-  loadFullInventory().then(() => {
-    const sortInventory = new SortInventory(
-      inventoryStore,
-      'sort_inventory_element',
-      25
-    )
-    inventoryHandler().then(() => {
-      sortInventory.render()
-    })
+  // loadFullInventory().then(() => {
+  const sortInventory = new SortInventory(
+    inventoryStore,
+    'sort_inventory_element',
+    25
+  )
+  inventoryHandler().then(() => {
+    sortInventory.render()
   })
+
+  // })
 })
 
 const $container = document.querySelector('#inventory_logos')
