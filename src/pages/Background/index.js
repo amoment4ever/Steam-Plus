@@ -23,6 +23,8 @@ const setApiCheckInterval = async (value) => {
   return autoAcceptOffers.getState()
 }
 
+autoAcceptOffers.initTimer()
+
 const actions = {
   getFloat,
   getCsmoneyPrices,
